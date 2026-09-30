@@ -1,0 +1,38 @@
+# Data (kept local, not versioned — see data/README.md)
+data/raw/*
+data/filtered/*
+data/deduplicated/*
+data/filtered_deduplicated/*
+!data/**/.gitkeep
+*.parquet
+*.csv
+*.jsonl
+*.tsv
+
+# Models / checkpoints / experiment tracking
+checkpoints/
+*.pt
+*.ckpt
+wandb/
+runs/
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

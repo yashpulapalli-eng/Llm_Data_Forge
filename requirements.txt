@@ -1,0 +1,12 @@
+pyspark>=3.5
+pyarrow
+pandas
+numpy
+datasets            # HuggingFace datasets -- streams the Phase 1 source corpus
+datasketch          # MinHash + LSH
+tokenizers          # or sentencepiece
+torch
+transformers
+tqdm
+wandb               # optional experiment tracking
+matplotlib
