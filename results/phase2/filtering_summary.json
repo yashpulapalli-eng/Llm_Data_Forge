@@ -1,0 +1,39 @@
+{
+  "thresholds": {
+    "min_length_chars": 200,
+    "max_length_chars": 100000,
+    "min_alpha_ratio": 0.7,
+    "max_duplicate_line_ratio": 0.3,
+    "max_duplicate_line_char_ratio": 0.3,
+    "max_top_trigram_char_ratio": 0.18,
+    "min_words_for_ngram_check": 50,
+    "min_english_stopwords": 2,
+    "min_words_for_language_check": 50
+  },
+  "raw_documents": 20000,
+  "kept_documents": 18692,
+  "removed_documents": 1308,
+  "pct_removed": 6.54,
+  "per_filter": {
+    "length": {
+      "fail": 898,
+      "fail_only_this": 793
+    },
+    "alpha_ratio": {
+      "fail": 316,
+      "fail_only_this": 183
+    },
+    "repetition": {
+      "fail": 141,
+      "fail_only_this": 113
+    },
+    "language": {
+      "fail": 108,
+      "fail_only_this": 66
+    }
+  },
+  "raw_estimated_tokens": 10856433,
+  "filtered_estimated_tokens": 10671885,
+  "raw_text_size_mb": 43.43,
+  "filtered_text_size_mb": 42.69
+}
