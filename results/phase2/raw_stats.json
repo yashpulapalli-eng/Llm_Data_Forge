@@ -1,0 +1,18 @@
+{
+  "documents": 20000,
+  "total_characters": 43425734,
+  "total_words": 7303108,
+  "estimated_tokens": 10856433,
+  "token_estimate_method": "characters / 4 (rough estimate)",
+  "raw_text_size_mb": 43.43,
+  "chars_per_doc": {
+    "mean": 2171.3,
+    "p5": 209.0,
+    "median": 1156.0,
+    "p95": 6913.0,
+    "max": 134046
+  },
+  "docs_shorter_than_200_chars": 894,
+  "docs_alpha_ratio_below_0.7": 372,
+  "mean_alpha_ratio": 0.792
+}
