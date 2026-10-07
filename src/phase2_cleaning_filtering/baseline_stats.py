@@ -61,11 +61,23 @@ def compute_stats(df) -> dict:
         F.avg("alpha_ratio").alias("mean_alpha_ratio"),
     ).first()
 
+    docs = agg["docs"]
+    if not docs:                                   # empty dataset: nothing to measure
+        df.unpersist()
+        return {
+            "documents": 0, "total_characters": 0, "total_words": 0, "estimated_tokens": 0,
+            "token_estimate_method": f"characters / {CHARS_PER_TOKEN} (rough estimate)",
+            "raw_text_size_mb": 0.0,
+            "chars_per_doc": {"mean": 0.0, "p5": 0.0, "median": 0.0, "p95": 0.0, "max": 0},
+            f"docs_shorter_than_{SHORT_DOC_CHARS}_chars": 0,
+            f"docs_alpha_ratio_below_{LOW_ALPHA_RATIO}": 0,
+            "mean_alpha_ratio": 0.0,
+        }
+
     p5, p50, p95 = df.approxQuantile("chars", [0.05, 0.5, 0.95], 0.001)
     longest = df.agg(F.max("chars")).first()[0]
     df.unpersist()
 
-    docs = agg["docs"]
     total_chars = agg["total_chars"] or 0
     return {
         "documents": docs,

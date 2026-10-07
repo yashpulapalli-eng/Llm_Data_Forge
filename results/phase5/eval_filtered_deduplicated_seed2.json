@@ -1,0 +1,31 @@
+{
+  "run_name": "filtered_deduplicated_seed2",
+  "heldout_clean": {
+    "loss": 5.810569333248451,
+    "perplexity": 333.80912021510596,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.825482673332339,
+    "perplexity": 338.82463523145407,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The tiestal in the Maring and tams.\nA.comper is the same mided it is our stan in the best and the Etren to make a huin, the same. Shoty or its world, and the"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLAT:0.\nILUe (AOC SMTGE CLHD-w.\nThe FIRDOCD. The The OCCLANHY and Lal MT. This was also a R"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our dam, it or the the best.\nAs, it is the best.\nI\u2019s a couple of the world is a otherly a lot of the work.\nI've also get the p.\nCENRCS, and the HE and"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best tap and a first other. This is more the dest or a rigates the new years in a a few, the way of the right.\nThe first for the drovine of the wick. The Tad the same newlyly in the time to the the"
+    }
+  ]
+}

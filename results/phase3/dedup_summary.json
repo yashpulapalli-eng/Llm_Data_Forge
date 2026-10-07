@@ -1,0 +1,61 @@
+{
+  "config": {
+    "num_hash_tables": 5,
+    "num_features": 262144,
+    "jaccard_threshold": 0.8,
+    "shingle_size": 5,
+    "max_cluster_iterations": 20
+  },
+  "deduplicated": {
+    "input": "raw",
+    "start": {
+      "documents": 20000,
+      "text_mb": 43.43,
+      "estimated_tokens": 10856433
+    },
+    "after_exact_dedup": {
+      "documents": 20000,
+      "text_mb": 43.43,
+      "estimated_tokens": 10856433
+    },
+    "near_duplicate_pairs": 22,
+    "near_duplicate_clusters": 10,
+    "documents_in_clusters": 26,
+    "largest_cluster": 5,
+    "final": {
+      "documents": 19984,
+      "text_mb": 43.41,
+      "estimated_tokens": 10853044
+    },
+    "removed_exact": 0,
+    "removed_near": 16,
+    "removed_total": 16,
+    "pct_removed": 0.08
+  },
+  "filtered_deduplicated": {
+    "input": "filtered",
+    "start": {
+      "documents": 18692,
+      "text_mb": 42.69,
+      "estimated_tokens": 10671885
+    },
+    "after_exact_dedup": {
+      "documents": 18692,
+      "text_mb": 42.69,
+      "estimated_tokens": 10671885
+    },
+    "near_duplicate_pairs": 22,
+    "near_duplicate_clusters": 10,
+    "documents_in_clusters": 26,
+    "largest_cluster": 5,
+    "final": {
+      "documents": 18676,
+      "text_mb": 42.67,
+      "estimated_tokens": 10668496
+    },
+    "removed_exact": 0,
+    "removed_near": 16,
+    "removed_total": 16,
+    "pct_removed": 0.09
+  }
+}

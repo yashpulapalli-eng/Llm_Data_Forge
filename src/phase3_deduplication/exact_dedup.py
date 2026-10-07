@@ -1,34 +1,35 @@
 """
-Phase 3: Deduplication Pipeline — exact-match deduplication.
+Phase 3: Deduplication Pipeline -- exact-match deduplication.
 
-Removes byte-identical (or normalized-identical) documents using a
-content hash, before near-duplicate detection via MinHash/LSH.
+Removes documents whose text is identical after light normalization
+(lower-casing and collapsing whitespace), using a SHA-256 content hash.
+This is the cheap first pass; near-duplicates that differ by even a few
+words are left for MinHash/LSH (minhash_lsh.py).
+
+Implemented with built-in Spark SQL functions only (no Python UDFs), which
+is faster and avoids the large-document UDF hang noted in Phase 2.
 """
 
-import hashlib
+from __future__ import annotations
 
-from pyspark.sql import DataFrame
-from pyspark.sql.functions import col, udf
-from pyspark.sql.types import StringType
-
-
-def content_hash(text: str) -> str:
-    """SHA-256 hash of normalized document text, used as an exact-dup key."""
-    if text is None:
-        return ""
-    normalized = " ".join(text.split()).lower()
-    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+from pyspark.sql import DataFrame, Window
+from pyspark.sql import functions as F
 
 
-def content_hash_udf():
-    return udf(content_hash, StringType())
+def add_content_hash(df: DataFrame, text_col: str = "text", hash_col: str = "_content_hash") -> DataFrame:
+    """Add a SHA-256 hash of the normalized text (lower-cased, whitespace collapsed)."""
+    normalized = F.lower(F.regexp_replace(F.trim(F.col(text_col)), r"\s+", " "))
+    return df.withColumn(hash_col, F.sha2(normalized, 256))
 
 
 def deduplicate_exact(df: DataFrame, text_col: str = "text") -> DataFrame:
     """
-    Drop exact (normalized) duplicate documents, keeping the first
-    occurrence of each content hash.
+    Drop exact (normalized) duplicates, keeping ONE document per content hash:
+    the one with the smallest doc_id. (doc_ids are random UUIDs, so which copy
+    survives is arbitrary but deterministic -- re-running gives the same result.)
     """
-    hashed = df.withColumn("_content_hash", content_hash_udf()(col(text_col)))
-    deduped = hashed.dropDuplicates(["_content_hash"]).drop("_content_hash")
-    return deduped
+    hashed = add_content_hash(df, text_col)
+    w = Window.partitionBy("_content_hash").orderBy(F.col("doc_id"))
+    return (hashed.withColumn("_rn", F.row_number().over(w))
+                  .filter(F.col("_rn") == 1)
+                  .drop("_rn", "_content_hash"))

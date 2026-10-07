@@ -1,0 +1,149 @@
+{
+  "seeds": [
+    1,
+    2
+  ],
+  "noise_range": {
+    "clean": 0.057905908490790914,
+    "raw": 0.06575397585259157
+  },
+  "variants": {
+    "raw": {
+      "documents": 19000,
+      "tokens_available": 12100833,
+      "train_tokens": 2220032,
+      "train_seconds_mean": 300.0500839948654,
+      "tokens_per_second_mean": 7401.922811734545,
+      "clean": {
+        "per_seed": {
+          "1": 5.841506098137527,
+          "2": 5.839952304715016
+        },
+        "mean": 5.840729201426272,
+        "min": 5.839952304715016,
+        "max": 5.841506098137527,
+        "perplexity": 344.03011647242823,
+        "delta_vs_raw": 0.0,
+        "same_sign_all_seeds": false,
+        "beyond_noise": false
+      },
+      "raw": {
+        "per_seed": {
+          "1": 5.861151882859527,
+          "2": 5.861662262775859
+        },
+        "mean": 5.861407072817693,
+        "min": 5.861151882859527,
+        "max": 5.861662262775859,
+        "perplexity": 351.21798578365565,
+        "delta_vs_raw": 0.0,
+        "same_sign_all_seeds": false,
+        "beyond_noise": false
+      },
+      "tokens_to_match_raw": null
+    },
+    "filtered": {
+      "documents": 17728,
+      "tokens_available": 11818704,
+      "train_tokens": 2220032,
+      "train_seconds_mean": 286.3568638563156,
+      "tokens_per_second_mean": 7752.700842669117,
+      "clean": {
+        "per_seed": {
+          "1": 5.816715756400686,
+          "2": 5.822584238208708
+        },
+        "mean": 5.819649997304698,
+        "min": 5.816715756400686,
+        "max": 5.822584238208708,
+        "perplexity": 336.85413314050754,
+        "delta_vs_raw": -0.021079204121574602,
+        "same_sign_all_seeds": true,
+        "beyond_noise": false
+      },
+      "raw": {
+        "per_seed": {
+          "1": 5.831857892333484,
+          "2": 5.841017621462463
+        },
+        "mean": 5.836437756897974,
+        "min": 5.831857892333484,
+        "max": 5.841017621462463,
+        "perplexity": 342.5568936993932,
+        "delta_vs_raw": -0.024969315919719737,
+        "same_sign_all_seeds": true,
+        "beyond_noise": false
+      },
+      "tokens_to_match_raw": 1935026.6471627
+    },
+    "deduplicated": {
+      "documents": 18984,
+      "tokens_available": 12097228,
+      "train_tokens": 2220032,
+      "train_seconds_mean": 291.33734929561615,
+      "tokens_per_second_mean": 7625.7034519365425,
+      "clean": {
+        "per_seed": {
+          "1": 5.839322903117195,
+          "2": 5.829439999627286
+        },
+        "mean": 5.8343814513722405,
+        "min": 5.829439999627286,
+        "max": 5.839322903117195,
+        "perplexity": 341.8532158023273,
+        "delta_vs_raw": -0.006347750054031209,
+        "same_sign_all_seeds": true,
+        "beyond_noise": false
+      },
+      "raw": {
+        "per_seed": {
+          "1": 5.862969539204582,
+          "2": 5.84615984901053
+        },
+        "mean": 5.854564694107556,
+        "min": 5.84615984901053,
+        "max": 5.862969539204582,
+        "perplexity": 348.82302228271965,
+        "delta_vs_raw": -0.0068423787101368205,
+        "same_sign_all_seeds": false,
+        "beyond_noise": false
+      },
+      "tokens_to_match_raw": 2152942.064395006
+    },
+    "filtered_deduplicated": {
+      "documents": 17712,
+      "tokens_available": 11815099,
+      "train_tokens": 2220032,
+      "train_seconds_mean": 286.37651801109314,
+      "tokens_per_second_mean": 7800.463883785283,
+      "clean": {
+        "per_seed": {
+          "1": 5.868475241739242,
+          "2": 5.810569333248451
+        },
+        "mean": 5.839522287493846,
+        "min": 5.810569333248451,
+        "max": 5.868475241739242,
+        "perplexity": 343.6151521951387,
+        "delta_vs_raw": -0.0012069139324251132,
+        "same_sign_all_seeds": false,
+        "beyond_noise": false
+      },
+      "raw": {
+        "per_seed": {
+          "1": 5.891236649184931,
+          "2": 5.825482673332339
+        },
+        "mean": 5.8583596612586355,
+        "min": 5.825482673332339,
+        "max": 5.891236649184931,
+        "perplexity": 350.149309209743,
+        "delta_vs_raw": -0.0030474115590579665,
+        "same_sign_all_seeds": false,
+        "beyond_noise": false
+      },
+      "tokens_to_match_raw": null
+    }
+  },
+  "note": "noise_range = largest seed-to-seed spread of final loss in any variant."
+}

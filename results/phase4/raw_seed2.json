@@ -1,0 +1,90 @@
+{
+  "run_name": "raw_seed2",
+  "variant": "raw",
+  "seed": 2,
+  "params": 2615424,
+  "model_config": {
+    "vocab_size": 4096,
+    "context_length": 256,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 192,
+    "dropout": 0.0
+  },
+  "train_config": {
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "min_lr_ratio": 0.1,
+    "warmup_fraction": 0.05,
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "num_evals": 6,
+    "eval_tokens": 65536
+  },
+  "train_tokens": 2220032,
+  "steps": 271,
+  "dataset_tokens_available": 12100833,
+  "epochs_over_data": 0.18346108900106298,
+  "train_seconds": 306.14220237731934,
+  "tokens_per_second": 7251.636601424253,
+  "final_val_clean": 5.830122709274292,
+  "final_val_raw": 5.8526612520217896,
+  "curve": [
+    {
+      "step": 45,
+      "tokens_seen": 368640,
+      "train_loss": 7.227670764923095,
+      "val_clean": 6.749416351318359,
+      "val_raw": 6.7587021589279175,
+      "train_seconds": 53.77792811393738
+    },
+    {
+      "step": 90,
+      "tokens_seen": 737280,
+      "train_loss": 6.518154811859131,
+      "val_clean": 6.270358204841614,
+      "val_raw": 6.282209753990173,
+      "train_seconds": 104.80037117004395
+    },
+    {
+      "step": 135,
+      "tokens_seen": 1105920,
+      "train_loss": 6.144061946868897,
+      "val_clean": 6.043641686439514,
+      "val_raw": 6.061462044715881,
+      "train_seconds": 158.87066388130188
+    },
+    {
+      "step": 180,
+      "tokens_seen": 1474560,
+      "train_loss": 5.990910530090332,
+      "val_clean": 5.929246544837952,
+      "val_raw": 5.946292519569397,
+      "train_seconds": 210.8629195690155
+    },
+    {
+      "step": 225,
+      "tokens_seen": 1843200,
+      "train_loss": 5.8903847800360785,
+      "val_clean": 5.860265731811523,
+      "val_raw": 5.881786823272705,
+      "train_seconds": 257.1755735874176
+    },
+    {
+      "step": 270,
+      "tokens_seen": 2211840,
+      "train_loss": 5.84862945344713,
+      "val_clean": 5.831103324890137,
+      "val_raw": 5.853585839271545,
+      "train_seconds": 305.0128884315491
+    },
+    {
+      "step": 271,
+      "tokens_seen": 2220032,
+      "train_loss": 5.900417804718018,
+      "val_clean": 5.830122709274292,
+      "val_raw": 5.8526612520217896,
+      "train_seconds": 306.14220237731934
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "run_name": "raw_seed1",
+  "heldout_clean": {
+    "loss": 5.841506098137527,
+    "perplexity": 344.297496188251,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.861151882859527,
+    "perplexity": 351.1283699155776,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The a way to do.\nThe GTETACThe MA.com\u2019s.\nBEBIHHSLCTBOPHFCISIBULBYPSC. SEEHITBATC"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLBT:0.\nILUICAOPI ITGEALIDIIIOUSIRDOC49, I had a few a day, and ITWVET. ThisRACX"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our fess, it you are the best-\u2019t not to need to them to our hur. They\u2019s have to us to a otherly a small.\nBV) and do it. That is a starter, I can be a great the own time and"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best.\nThe FUBESGSMLFCANPECPRWTRCFFYIIMCSUWSTTPERPLPHCUTThe THARBALEMIALANI"
+    }
+  ]
+}

@@ -1,39 +1,39 @@
 """
-Phase 4: Model Pretraining & Experimentation — model architecture/hyperparameters.
+Phase 4: Model Pretraining & Experimentation -- model and training settings.
 
-Keep this config fixed across all four dataset-variant training runs
-so the comparison in Phase 5 isolates the effect of the data, not the model.
+These settings are kept IDENTICAL across all four dataset-variant runs, so the
+comparison in Phase 5 isolates the effect of the data, not the model.
+
+The model is a small GPT-style decoder-only transformer, sized so that one run
+trains in about 5 minutes on a laptop CPU.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 
 
 @dataclass
 class ModelConfig:
-    """
-    Small/medium-scale decoder-only transformer config.
-    Pick sizes appropriate to your available compute — document the
-    final choice and rationale in the Phase 4 report.
-    """
-    vocab_size: int = 32_000
-    context_length: int = 1024
-    n_layer: int = 12
-    n_head: int = 12
-    n_embd: int = 768
+    vocab_size: int = 4096        # must match the shared tokenizer (tokenize_dataset.py)
+    context_length: int = 256
+    n_layer: int = 4
+    n_head: int = 4
+    n_embd: int = 192
     dropout: float = 0.0
+
+    def to_dict(self):
+        return asdict(self)
 
 
 @dataclass
 class TrainConfig:
-    """
-    Training budget — kept IDENTICAL across dataset variants so the
-    comparison in Phase 5 is fair (same compute, different data).
-    """
-    batch_size: int = 32
-    max_steps: int = 10_000
-    learning_rate: float = 3e-4
-    warmup_steps: int = 200
+    batch_size: int = 32          # sequences per step -> 32 x 256 = 8,192 tokens per step
+    learning_rate: float = 1e-3
+    min_lr_ratio: float = 0.1     # cosine decay down to 10% of the peak LR
+    warmup_fraction: float = 0.05
     weight_decay: float = 0.1
     grad_clip: float = 1.0
-    eval_interval: int = 500
-    seed: int = 42
+    num_evals: int = 6            # validation checks spread over the run
+    eval_tokens: int = 65_536     # tokens per held-out set used for these quick checks
+
+    def to_dict(self):
+        return asdict(self)

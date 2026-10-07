@@ -1,0 +1,31 @@
+{
+  "run_name": "raw_seed2",
+  "heldout_clean": {
+    "loss": 5.839952304715016,
+    "perplexity": 343.7629444023573,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.861662262775859,
+    "perplexity": 351.30762452372153,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The tiat.\nThe Mon. The taml.\nA.comper.\nBEB is it is our stan in the best and the Etren.\nULBY, \"He are the Koty or its world, and I"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLAT:0.\nILUe (AOPMMTGLALHDIIIOUSIRDOCD. The The OCCLANHY and Lal MT. ThisRAAA"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our dal, it or the the best-haming, it will be been our stur. They\u2019s, I can not a otherly a lot.\nB.\nI do was the first, and do it would be a day. The Sot to your way"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best tang and rat, in the pam the dest or and an new bramala to a van the Gis, and futes.PERPLPHCUT) with the the UAAPMIALANI"
+    }
+  ]
+}

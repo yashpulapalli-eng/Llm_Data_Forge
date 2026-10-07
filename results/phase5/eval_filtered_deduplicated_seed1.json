@@ -1,0 +1,31 @@
+{
+  "run_name": "filtered_deduplicated_seed1",
+  "heldout_clean": {
+    "loss": 5.868475241739242,
+    "perplexity": 353.7092477940791,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.891236649184931,
+    "perplexity": 361.85249238535414,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The way to the own other to not for a important of the most.\nA.comper.\nBEBMHHSLCTBOPHFCISIBUL CYPSMBLhEHITBA),"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLHTADERHILUeCAOPMMTGEALHDIIIOUSIREOTD. The The OCCEANHY and RRET. ThisRACA"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our dam, it you are the best.\nAs, it!\nThe first.\nUDUMSFVAEADCI.\nBV) I've was a first, and ICENRCSKGERThe OH"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best.\nThe FUB. For the fil.\nWe\u2019s that it is to get you to a way to the way to be a futes.PERPLPHCUTThe THC. We have a stilal to the the"
+    }
+  ]
+}

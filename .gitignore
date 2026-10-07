@@ -36,3 +36,5 @@ derby.log
 .DS_Store
 .vscode/
 .idea/
+data/tokenized/
+.env

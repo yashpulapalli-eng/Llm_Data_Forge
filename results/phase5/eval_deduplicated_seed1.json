@@ -1,0 +1,31 @@
+{
+  "run_name": "deduplicated_seed1",
+  "heldout_clean": {
+    "loss": 5.839322903117195,
+    "perplexity": 343.54664753181726,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.862969539204582,
+    "perplexity": 351.76718101873155,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "TheThe AI.\nThe MPTETAThe\nBA.comThe ABHBIBIHHSLCTBOAHFUISIBULBYPSBBLhEHITBATC"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLBTADERFILUICAOPIMTGLhLIDIIIOUSIRDOT49, The OCCLANHYTWVDT. ThisRAAA"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our dal, it you are the best-2.\nI is a more than our hur. They are not be be for one of otherly than an bight!\nHow\u2019s but you can be a star. It is the first as the minate and"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best tast and the first other cum of the the dest or a first of the same years.\nS, I would be a lake and I get on the own the droat. In a lot of the own with the the same of the other stilal to the time"
+    }
+  ]
+}

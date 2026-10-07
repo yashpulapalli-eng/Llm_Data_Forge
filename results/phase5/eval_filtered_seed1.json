@@ -1,0 +1,31 @@
+{
+  "run_name": "filtered_seed1",
+  "heldout_clean": {
+    "loss": 5.816715756400686,
+    "perplexity": 335.86717066532066,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.831857892333484,
+    "perplexity": 340.9916166350915,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The way to the own.\nThe year as much of the most.\nA.compay to provide a little of the right is a little bay, this stent to use you\u2019s, he\u2019ve just a care the Sraers. Ano, as there\u2019"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLATADERCILUICAOPI ITGEALISDI in the first of the same me, and a few to the new catan.\nHY and the UDT. This was much a r"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our din, it you are the best-hamk, it!\nThe first.\nUDUMuus for the Betan Mas.\nB.\nI do was a uncrentment of the Bad.Gen to your most"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best.\nThere are a few range of the time you.\nWe have an important for the most than you to a way to the way to be a futes.PERat. Ince.\nT) with the cunicks is in the time to the time"
+    }
+  ]
+}

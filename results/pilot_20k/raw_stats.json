@@ -8,8 +8,8 @@
   "chars_per_doc": {
     "mean": 2171.3,
     "p5": 209.0,
-    "median": 1157.0,
-    "p95": 6916.0,
+    "median": 1156.0,
+    "p95": 6913.0,
     "max": 134046
   },
   "docs_shorter_than_200_chars": 894,

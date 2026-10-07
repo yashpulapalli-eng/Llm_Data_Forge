@@ -1,0 +1,31 @@
+{
+  "run_name": "deduplicated_seed2",
+  "heldout_clean": {
+    "loss": 5.829439999627286,
+    "perplexity": 340.1681314429632,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.84615984901053,
+    "perplexity": 345.90350504577464,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The tore in the other to a year as much of the most.\nA.comper.\nBE the madt and it is in the best and the world of Fiminging. SBY, the same. Suers.\nHBA) and"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, the DLATA a CHILUe (AOA SMTGLALHDIIIOUSIRDOTDJEA, the NLA the NY and the UDT. ThisRACA"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our damor in you are the best. I was not to need to the way. I are a week. I have to for it are to my pued to make a tumping, the first. To do you can be a day. I\u2019s to your way"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best.\nThe rimge. For the time the dest or a first.\nIn the first in a buan the Gow is a futes.PERPLPH.\nT) with the the UA is not in the time to the the"
+    }
+  ]
+}

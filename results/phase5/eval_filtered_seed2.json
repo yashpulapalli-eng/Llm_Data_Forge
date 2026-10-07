@@ -1,0 +1,31 @@
+{
+  "run_name": "filtered_seed2",
+  "heldout_clean": {
+    "loss": 5.822584238208708,
+    "perplexity": 337.843995854278,
+    "tokens": 249856
+  },
+  "heldout_raw": {
+    "loss": 5.841017621462463,
+    "perplexity": 344.12935596171263,
+    "tokens": 249856
+  },
+  "samples": [
+    {
+      "prompt": "The",
+      "text": "The tiest.\nThe Mar Calls the Tethat.comper.\nBura is the Domtan in The Auy Dosren Cor. Syma-ca Shotyposa, and V"
+    },
+    {
+      "prompt": "In the United States,",
+      "text": "In the United States, you can be a mam to be been to be a mary's remen with the for and we can be in the first, and you.\nOrem. The duine this is not the dun and the other dat. This is much a r"
+    },
+    {
+      "prompt": "If you want to",
+      "text": "If you want to give our dam, it or the the best-haming, is the SBa.\nUDUMuit for the HADCF.\nBV) and a same year, I\u2019s.\nNRCS SGER. OH"
+    },
+    {
+      "prompt": "One of the best",
+      "text": "One of the best ter and a first other. For the time the dest or a rigy, to get in a a way are the way of the right.\nThe first-PERPLPHCUTThe THC.\nThe RMTALAN-"
+    }
+  ]
+}
